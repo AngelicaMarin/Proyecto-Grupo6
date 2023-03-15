@@ -2,3 +2,54 @@
 .carousel-caption {
 
 }
+
+/*inicio Sesion*/
+.bodySesion{
+    background-color: black;
+}
+
+.fullDiv{
+    height: 90vh; 
+}
+.card {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: #38DA36;
+    padding: 20px;
+    position: absolute; 
+    left: 33%; 
+    top: 20%;
+}
+.card h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0 30px;
+}
+
+.inputSesion{
+    border-radius: 8px;
+    height: 38px;
+    background-color: #e3e3e3;
+    margin-top: 30px;
+}
+
+.buttonSesion {
+  border-radius: 8px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.divButton{
+    margin: 20px 0 10px;
+}
