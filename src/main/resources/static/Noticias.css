@@ -53,7 +53,7 @@
   height: 100px;
 }
 
-button[type="submit"] {
+.buttonNoticias[type="submit"] {
   padding: 5px 10px;
   border-radius: 5px;
   border: none;
@@ -62,7 +62,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+.buttonNoticias[type="submit"]:hover {
   background-color: #0062cc;
 }
 
