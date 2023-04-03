@@ -5,20 +5,44 @@
   align-items: center;
   padding-bottom: 25px;
 }
+.card-container-derecha{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+}
 
 .card {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #fff;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card-derecha{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
 .card img {
-  width: 150px;
-  height: 150px;
+  width: 380px;
+  height: 350px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.card-derecha img{
+  width: 200px;
+  height: 206px;
   object-fit: cover;
   margin-right: 20px;
 }
@@ -27,16 +51,32 @@
   padding: 10px;
 }
 
+.card-h2-derecha{
+    padding-bottom: 30px;
+}
+
 .card-text h2 {
   margin: 0;
   font-size: 24px;
-  color: #333;
+  color: #198754;
+}
+
+.card-derecha h2{
+      margin: 0;
+  font-size: 20px;
+  color: #198754;
 }
 
 .card-text p {
   margin: 10px 0 0 0;
   font-size: 16px;
-  color: #666;
+  color: white;
+}
+
+.card-p-derecha {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  color: white;
 }
 
 .text {
@@ -48,4 +88,10 @@
   font-size: 16px;
   line-height: 1.5;
   color: #333;
+}
+
+.tituloLanzamientos{
+    color: #198754;
+    font-size: 20px;
+    padding-left: 185px;
 }
