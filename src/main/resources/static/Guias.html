@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="en">
-    <head>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="head">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GAMES CR</title>
@@ -49,7 +49,10 @@
                             <a class="nav-link text-white" href="hardware.html">Hardware</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="Productos.html">Productos</a>
+                            <a class="nav-link text-white" href="Tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/producto">Base De Datos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="InicioSesion.html">Usuario</a>
@@ -156,11 +159,17 @@
                 </div>
             </div>
         </div>
-        <footer id="footer" class="footer-1  bg-success text-black">
+        <footer th:fragment="footer" id="footer" class="footer-1  bg-success text-black">
             <div class="main-footer widgets-dark typo-light">
                 <div class="container">
                     <div class="row">
-
+                        
+                        <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+                           th:href="${urlBuilder.replaceQueryParam('lang','es').toUriString()}">ES</a>
+                        
+                        <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+                           th:href="${urlBuilder.replaceQueryParam('lang','en').toUriString()}">EN</a>
+                        
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="widget subscribe no-box">
                                 <h5 class="widget-title">GAMESCR<span></span></h5>
@@ -196,8 +205,9 @@
                                         <a class="link text-white" aria-current="page" href="hardware.html">Hardware</a>
                                     </li>
                                     <li class="item" >
-                                        <a class="link text-white" aria-current="page" href="Productos.html">Productos</a>
+                                        <a class="link text-white" aria-current="page" href="Tienda.html">Productos</a>
                                     </li>
+
                                     <li class="item" >
                                         <p><a class="link text-white" aria-current="page" href="InicioSesion.html">Usuario</a>
                                     </li>
