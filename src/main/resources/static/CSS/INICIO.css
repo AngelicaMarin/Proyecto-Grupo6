@@ -21,7 +21,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     font-style: normal;
     font-weight: 400;
     src:url("https://fonts.animapp.com/SegoeUI-Regular");
-    format("truetype");
+    format: "truetype";
 }
 
 @font-face{

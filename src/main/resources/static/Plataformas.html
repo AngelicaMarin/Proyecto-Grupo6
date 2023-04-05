@@ -3,8 +3,8 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
-<html>
-    <head>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="head">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GAMES CR</title>
@@ -12,7 +12,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </head>
     <body>
         <!-- HEADER -->
-        <header>
+        <header th:fragment="header">
             <div class="text-white" style="position: absolute; left: 42%; top: 5%;">
                 <h1>GAMES CR</h1>
             </div>
@@ -220,11 +220,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </div>
         </div>    
         <!-- comment -->
-        <footer id="footer" class="footer-1  bg-success text-black">
+        <footer th:fragment="footer" id="footer" class="footer-1  bg-success text-black">
             <div class="main-footer widgets-dark typo-light">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="widget subscribe no-box">
                                 <h5 class="widget-title">GAMESCR<span></span></h5>
@@ -262,6 +261,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                                     <li class="item" >
                                         <a class="link text-white" aria-current="page" href="Tienda.html">Productos</a>
                                     </li>
+
                                     <li class="item" >
                                         <p><a class="link text-white" aria-current="page" href="InicioSesion.html">Usuario</a>
                                     </li>
@@ -285,6 +285,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                                 <a class="link text-white" aria-current="page" href="#">Grupo6@noexiste.com</a>
                                 </li>
                             </div>
+                        </div>
+                        <div>
+                            <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+                               th:href="${urlBuilder.replaceQueryParam('lang','es').toUriString()}">ES</a>
+                            <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+                               th:href="${urlBuilder.replaceQueryParam('lang','en').toUriString()}">EN</a>
                         </div>
 
                     </div>
