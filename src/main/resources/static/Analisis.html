@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="en">
-    <head>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="head">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GAMES CR</title>
@@ -8,7 +8,7 @@
     </head>
     <body>
         <!-- HEADER -->
-        <header>
+        <header th:fragment="header">
             <img src="images/header.jpg" class="img-fluid" alt="header"/>
         </header>
 
@@ -61,11 +61,10 @@
         <h1>ESCRIBIR AQUI</h1> <!-- EL CODIGO ENTRE EL NAVBAR Y EL FOOTER VA ACA -->
 
 
-        <footer id="footer" class="footer-1  bg-success text-black">
+        <footer th:fragment="footer" id="footer" class="footer-1  bg-success text-black">
             <div class="main-footer widgets-dark typo-light">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="widget subscribe no-box">
                                 <h5 class="widget-title">GAMESCR<span></span></h5>
@@ -103,6 +102,7 @@
                                     <li class="item" >
                                         <a class="link text-white" aria-current="page" href="Tienda.html">Productos</a>
                                     </li>
+
                                     <li class="item" >
                                         <p><a class="link text-white" aria-current="page" href="InicioSesion.html">Usuario</a>
                                     </li>
@@ -126,6 +126,12 @@
                                 <a class="link text-white" aria-current="page" href="#">Grupo6@noexiste.com</a>
                                 </li>
                             </div>
+                        </div>
+                        <div>
+                            <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+                               th:href="${urlBuilder.replaceQueryParam('lang','es').toUriString()}">ES</a>
+                            <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+                               th:href="${urlBuilder.replaceQueryParam('lang','en').toUriString()}">EN</a>
                         </div>
 
                     </div>

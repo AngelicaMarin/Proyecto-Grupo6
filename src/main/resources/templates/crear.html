@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    
+
     <body>
-         
+
         <div class="container">
             <div class="card-header bg-black text-white"></div>
             <div class="card-body">
@@ -20,28 +20,28 @@
                                 <input type="text" class="form-control form-control-sm col-md-6" th:field="*{producto}"  placeholder= "Nombre Producto" id="productos" aria-describedby="emailHelp">                            
                             </div>
                         </div>
-                        
+
                         <div class="form-group mb-3 row">
                             <label  class="col-md-2 col-form-label" for="precio">Precio</label>                            
                             <div class="col-sm-10">                                
                                 <input type="text" class="form-control form-control-sm col-md-6" th:field="*{precio}"  placeholder= "Precio Producto" id="precio" aria-describedby="emailHelp">                            
                             </div>
                         </div>
-                        
+
                         <div class="form-group mb-3 row">
                             <label  class="col-md-2 col-form-label" for="garantia">Garantia</label>                            
                             <div class="col-sm-10">                                
                                 <input type="text"  class="form-control form-control-sm col-md-6" th:field="*{garantia}"  placeholder= "Garantia Producto" id="garantia" aria-describedby="emailHelp">                            
                             </div>
                         </div>
-                        
+
                         <div class="form-group mb-3 row">
                             <label  class="col-md-2 col-form-label" for="cant_disp">Cantidad Disponible</label>                            
                             <div class="col-sm-10">                                
                                 <input type="text" class="form-control form-control-sm col-md-6" th:field="*{cant_disp}"  placeholder= "Cantidad Disponible Producto" id="cant_disp" aria-describedby="emailHelp">                            
                             </div>
                         </div>
-                                               
+
                         <div class="form-group mb-3 row">
                             <label  class="col-md-2 col-form-label" for="categorias">Categorias</label>                            
                             <div class="col-sm-10">                                
@@ -52,9 +52,10 @@
                                 </select>            
                             </div>
                         </div>
-                        
+
                         <button type="submit" class="btn btn-primary" value="Guardar">Submit</button>
                     </form>   
                 </div>
             </div>
+        </div>
 </html>

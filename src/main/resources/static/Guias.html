@@ -10,7 +10,7 @@
     </head>
     <body>
         <!-- HEADER -->
-        <header>
+        <header th:fragment="header">
             <div class="text-white" style="position: absolute; left: 42%; top: 5%;">
                 <h1>GAMES CR</h1>
             </div>
@@ -163,13 +163,6 @@
             <div class="main-footer widgets-dark typo-light">
                 <div class="container">
                     <div class="row">
-                        
-                        <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
-                           th:href="${urlBuilder.replaceQueryParam('lang','es').toUriString()}">ES</a>
-                        
-                        <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
-                           th:href="${urlBuilder.replaceQueryParam('lang','en').toUriString()}">EN</a>
-                        
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="widget subscribe no-box">
                                 <h5 class="widget-title">GAMESCR<span></span></h5>
@@ -231,6 +224,12 @@
                                 <a class="link text-white" aria-current="page" href="#">Grupo6@noexiste.com</a>
                                 </li>
                             </div>
+                        </div>
+                        <div>
+                            <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+                               th:href="${urlBuilder.replaceQueryParam('lang','es').toUriString()}">ES</a>
+                            <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+                               th:href="${urlBuilder.replaceQueryParam('lang','en').toUriString()}">EN</a>
                         </div>
 
                     </div>

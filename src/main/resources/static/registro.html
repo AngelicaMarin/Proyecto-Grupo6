@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="en">
-    <head>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="head">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GAMES CR</title>
@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="inicioSesion.css">
     </head>
     <body>
-        <header>
+        <header th:fragment="header">
             <div class="text-white" style="position: absolute; left: 42%; top: 5%;">
                 <h1>GAMES CR</h1>
             </div>

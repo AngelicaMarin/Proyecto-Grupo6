@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="en">
-    <head>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="head">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GAMES CR</title>
@@ -10,7 +10,7 @@
     </head>
     <body>
         <!-- HEADER -->
-        <header>
+        <header th:fragment="header">
             <img src="images/header.jpg" class="img-fluid" alt="header"/>
         </header>
 
@@ -83,77 +83,77 @@
                 <div class="NOTICIAS" style="position: absolute; top: 940px; left: 25px"  ><h1>NOTICIAS</h1> </div>
                 <p class="subtitulo" style="position: absolute; top: 960px; left: 210px"  > Novedades de hoy</p>
                 <h1 style="position: absolute; top: 932px; left: 345px" >_______________________________________________________________________________________</h1>
-                <div clss"flex-row-2" style="position: absolute; top: 1000px;>
-                     <div class="grupo-container">
-                    <div class="grupo7">
-                        <div class="overlap-group1" >
-                            <img class="Linea-5" src="images/miyamoto.jpg" alt="linea5"/>
+                <div class"flex-row-2" style="position: absolute; top: 1000px;">
+                    <div class="grupo-container">
+                        <div class="grupo7">
+                            <div class="overlap-group1" >
+                                <img class="Linea-5" src="images/miyamoto.jpg" alt="linea5"/>
+                            </div>
+                        </div>
+                        <div class="grupo-3">
+                            <div class="overlap-group1">
+                                <img class="Linea-5" src="images/re4N.jpg" alt="Linea5"/>
+                            </div>
+                        </div>
+                        <div class="grupo-3">
+                            <div class="overlap-group1">
+                                <img class="Linea-5" src="images/SWJD.png" alt="Linea5"/>
+                            </div>
                         </div>
                     </div>
-                    <div class="grupo-3">
-                        <div class="overlap-group1">
-                            <img class="Linea-5" src="images/re4N.jpg" alt="Linea5"/>
-                        </div>
+                    <div class="flex-col-1 flex-col-5">
+                        <div <p class="parrafo">¿Cuándo habrá nuevo juego de Mario? Shigeru Miyamoto sonríe cuando le hacen esa pregunta y emplaza a que veamos los próximos eventos de la compañía.</p></div>
                     </div>
-                    <div class="grupo-3">
-                        <div class="overlap-group1">
-                            <img class="Linea-5" src="images/SWJD.png" alt="Linea5"/>
-                        </div>
-                    </div>
+                    <div> <h5 class="autor">Manu Delgado</h5></div>
+                    <div> <p class="fecha-de-la-noticia-1">Enero 10, 2023</p></div>
+                    <div class="parrafo-2">Esta teoría de Resident Evil 4 Remake asegura haber descubierto en qué parte de España sucede</div>
                 </div>
-                <div class="flex-col-1 flex-col-5">
-                    <div <p class="parrafo">¿Cuándo habrá nuevo juego de Mario? Shigeru Miyamoto sonríe cuando le hacen esa pregunta y emplaza a que veamos los próximos eventos de la compañía.</p></div>
-                </div>
-                <div> <h5 class="autor">Manu Delgado</h5></div>
-                <div> <p class="fecha-de-la-noticia-1">Enero 10, 2023</p></div>
-                <div class="parrafo-2">Esta teoría de Resident Evil 4 Remake asegura haber descubierto en qué parte de España sucede</div>
-            </div>
-            <div><h5 class="autor-2">Manu Delgado</h5></div>
-            <div class="fecha-de-la-noticia-2">Febrero 5, 2023</div>
-            <div class="parraf-3">Star Wars Jedi: Survivor tendrá más opciones de personalización, incluyendo peinado y barba</div>
+                <div><h5 class="autor-2">Manu Delgado</h5></div>
+                <div class="fecha-de-la-noticia-2">Febrero 5, 2023</div>
+                <div class="parraf-3">Star Wars Jedi: Survivor tendrá más opciones de personalización, incluyendo peinado y barba</div>
 
-        </div> 
-        <div> <h5 class="autor-3">Manu Delgado</h5></div>
-        <div class="fecha-de-la-noticia-3">Marzo 18, 2023</div>
+            </div> 
+            <div> <h5 class="autor-3">Manu Delgado</h5></div>
+            <div class="fecha-de-la-noticia-3">Marzo 18, 2023</div>
 
-        <div class="parte-derecha-noticias" style="position: absolute; top: 1000px; left: 900px;">
-            <div clss"flex-row-2">
-                <div class="grupo-container">
-                    <div class="grupo7">
-                        <div class="overlap-group1">
-                            <img class="Linea-5" src="images/activision.jpg" alt="linea5"/>
+            <div class="parte-derecha-noticias" style="position: absolute; top: 1000px; left: 900px;">
+                <div clss"flex-row-2">
+                    <div class="grupo-container">
+                        <div class="grupo7">
+                            <div class="overlap-group1">
+                                <img class="Linea-5" src="images/activision.jpg" alt="linea5"/>
+                            </div>
+                        </div>
+                        <div class="grupo-3">
+                            <div class="overlap-group1">
+                                <img class="Linea-5" src="images/bayoneta.jpg" alt="Linea5"/>
+                            </div>
+                        </div>
+                        <div class="grupo-3">
+                            <div class="overlap-group1">
+                                <img class="Linea-5" src="images/ubisof.jpg" alt="Linea5"/>
+                            </div>
                         </div>
                     </div>
-                    <div class="grupo-3">
-                        <div class="overlap-group1">
-                            <img class="Linea-5" src="images/bayoneta.jpg" alt="Linea5"/>
-                        </div>
+                    <div class="flex-col-1 flex-col-5">
+                        <div <p class="parrafo-4">Activision Blizzard demandada en Estados Unidos por una polémica medida de sus ligas esports</div>
                     </div>
-                    <div class="grupo-3">
-                        <div class="overlap-group1">
-                            <img class="Linea-5" src="images/ubisof.jpg" alt="Linea5"/>
-                        </div>
-                    </div>
+                    <div> <h5 class="autor4">Manu Delgado</h5></div>
+                    <div> <p class="fecha-de-la-noticia-4">Enero 10, 2023</p></div>
+                    <div class="parrafo-5">Bayonetta Origins fue el juego más vendido en España en la tercera semana de marzo</div>
                 </div>
-                <div class="flex-col-1 flex-col-5">
-                    <div <p class="parrafo-4">Activision Blizzard demandada en Estados Unidos por una polémica medida de sus ligas esports</div>
-                </div>
-                <div> <h5 class="autor4">Manu Delgado</h5></div>
-                <div> <p class="fecha-de-la-noticia-4">Enero 10, 2023</p></div>
-                <div class="parrafo-5">Bayonetta Origins fue el juego más vendido en España en la tercera semana de marzo</div>
-            </div>
-            <div><h5 class="autor-5">Manu Delgado</h5></div>
-            <div class="fecha-de-la-noticia-5">Febrero 5, 2023</div>
+                <div><h5 class="autor-5">Manu Delgado</h5></div>
+                <div class="fecha-de-la-noticia-5">Febrero 5, 2023</div>
 
-            <div class="parraf-6">¿Qué está pasando con Ubisoft? Analizamos en detalle la crisis de la compañía francesa</div>
+                <div class="parraf-6">¿Qué está pasando con Ubisoft? Analizamos en detalle la crisis de la compañía francesa</div>
 
-        </div> 
-        <div> <h5 class="autor-6">Manu Delgado</h5></div>
-        <div class="fecha-de-la-noticia-6">Marzo 18, 2023</div>
+            </div> 
+            <div> <h5 class="autor-6">Manu Delgado</h5></div>
+            <div class="fecha-de-la-noticia-6">Marzo 18, 2023</div>
+        </div>
+
+
     </div>
-
-
-</div>
 </div>
 </div>
 </div>
@@ -305,12 +305,11 @@
 
 </div>
 
- <div class="total-del-footer">
-    <footer id="footer" class="footer-1  bg-success text-black">
+<div class="total-del-footer">
+    <footer th:fragment="footer" id="footer" class="footer-1  bg-success text-black">
         <div class="main-footer widgets-dark typo-light">
             <div class="container">
                 <div class="row">
-
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="widget subscribe no-box">
                             <h5 class="widget-title">GAMESCR<span></span></h5>
@@ -346,8 +345,9 @@
                                     <a class="link text-white" aria-current="page" href="hardware.html">Hardware</a>
                                 </li>
                                 <li class="item" >
-                                    <a class="link text-white" aria-current="page" href="Productos.html">Productos</a>
+                                    <a class="link text-white" aria-current="page" href="Tienda.html">Productos</a>
                                 </li>
+
                                 <li class="item" >
                                     <p><a class="link text-white" aria-current="page" href="InicioSesion.html">Usuario</a>
                                 </li>
@@ -371,6 +371,12 @@
                             <a class="link text-white" aria-current="page" href="#">Grupo6@noexiste.com</a>
                             </li>
                         </div>
+                    </div>
+                    <div>
+                        <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+                           th:href="${urlBuilder.replaceQueryParam('lang','es').toUriString()}">ES</a>
+                        <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+                           th:href="${urlBuilder.replaceQueryParam('lang','en').toUriString()}">EN</a>
                     </div>
 
                 </div>
