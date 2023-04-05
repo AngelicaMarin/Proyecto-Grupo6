@@ -1,0 +1,425 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 4 abr 2023, 14:38:10
+    Author     : Marcelo
+*/
+:root{
+    --white: rgba(255,255,255,1);
+}
+@font-face{
+    font-family:"FootlightHT-Light";
+    font-style: normal;
+    font-weight: 300;
+    src:url("https://fonts.animapp.com/FootlightHT-Light");
+}
+
+@font-face{
+    font-family: "SegoeUI-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src:url("https://fonts.animapp.com/SegoeUI-Regular");
+    format("truetype");
+}
+
+@font-face{
+    font-family: "Castellar-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src:url("https://fonts.animapp.com/Casteller-Regular")
+        format("truetype");
+}
+
+.grupo-2{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+    min-height: 582px;
+    width: 436px;
+}
+
+.grupo-1{
+    align-items: flex-start;
+    display: flex;
+    min-width: 434;
+}
+
+.overlap-group-conrainer{
+    align-self: center;
+    height: 26px;
+    margin-left: 117;
+    margin-top: B.25;
+    position: relative;
+    width: 26;
+}
+
+.flex-col{
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 37px;
+    margin-top: 8.5px;
+    min-height: 56px;
+    width: 125;
+}
+
+.inicio.flex{
+    align-items: flex-start;
+    display: flex;
+}
+
+.breve-resumen{
+    letter-spacing: 8;
+    line-height: 15px;
+    margin-left: 6px;
+    min-height: 17px;
+    white-space: nowrap;
+}
+
+.titulo-de-juego{
+    letter-spacing: 8;
+    line-height: 28px;
+    min-height: 23px;
+    white-space: nowrap;
+}
+
+.grupo{
+    align-items: center;
+    border: 2px solid;
+    border-color: #fff;
+    display: flex;
+    height: 74px;
+    min-width: 129;
+    padding: 0 1.3px
+}
+
+.overlap-group{
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/642c81647b30d9cca72286f5/nea-10-1@1x.png);
+}
+
+.Linea-11{
+    height: 72px;
+    width: 126px;
+}
+
+.icon{
+    align-self: center;
+    height: 26px;
+    margin-bottom: 12px;
+    margin-left: 117px;
+    width: 26;
+}
+
+.grupo-1-3{
+    align-items: flex-start;
+    border:2px solid;
+    border-color: #fff;
+    display: flex;
+    height: 74px;
+    min-width: 129;
+    padding: 1.1px 1.3px
+}
+
+.grupo1-1{
+    align-items: flex-start;
+    display: flex;
+    min-width: 436;
+}
+
+.inicio .analisis-6{
+    letter-spacing: 8;
+    white-space: nowrap;
+}
+
+.analisis-1{
+    color: var(--white);
+    font-family: var (--font-family-footlighthtml-light);
+    font-size: var(--font-size-xxl);
+    font-weight: 600;
+    left: 499px;
+    line-height: 60px;
+    position: absolute;
+    top: 590px;
+}
+.analisis-2{
+    left: 145;
+    line-height: 25;
+    position: absolute;
+    top: 634;
+}
+
+.Linea-3{
+    margin: 30px 30px;
+    height: 600px;
+    width: 690px;
+}
+
+.Linea-5-1{
+    margin: 0px 30px;
+    height: 190px;
+    position: absolute;
+    top: 720px;
+    width: 240px;
+}
+
+.Linea-6{
+    height: 190px;
+    left: 269px;
+    position: absolute;
+    top: 720px;
+    width: 240px;
+}
+
+
+.Linea-9{
+    height: 190px;
+    left: 480px;
+    position: absolute;
+    top: 720px;
+    width: 240px;
+}
+
+.flex-col{
+    align-items: center;
+    min-height: 673px;
+    width: 588px;
+}
+
+.proximos-lanzamientos{
+    color: #198754;
+    font-family: var(--font-family-footlighthtml-light);
+    font-size: var(--font-size-l);
+    font-weight: 388;
+    letter-spacing: 8;
+    line-height: 38px;
+    margin-left: 17.86px;
+    margin-top: 16px;
+    min-height: 34px;
+    min-width: 361px;
+    white-space: nowrap;
+}
+
+.titulo-de-juego{
+    color: #198754;
+    letter-spacing: 8;
+    line-height: 28px;
+    min-height: 23px;
+    white-space: nowrap;
+}
+
+.breve-resumen{
+    color: #fff;
+    letter-spacing: 8;
+    line-height: 15px;
+    min-left:6;
+    min-height:17px;
+    white-space: nowrap;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+h1{
+    color: #198754
+}
+
+.subtitulo{
+    color: #fff;
+}
+
+.grupo7{
+    align-items: center;
+    background-color: black;
+    border-color: #fff;
+    display: flex;
+    height: 277px;
+    margin-left: 2px;
+    min-width: 428px;
+    padding: 0 0.7px;
+}
+
+.overlap-group1{
+    align-items: flex-end;
+    background-image: url(https;//anima-uploads.s3.amazonaws.com/projects/642c81647b30d9cca72286f5/renea-4-12@1xpng);
+    background-size: 100% 100%;
+    display: flex;
+    height: 276px;
+    min-width: 426px;
+    padding: 0.4px 0;
+}
+
+.Linea-5{
+    margin-left:  10px;
+    margin-bottom: -10px;
+    height: 275px;
+    width: 426px;
+}
+
+.x{
+    color: #fff;
+    margin-left: 4px;
+    min-height: 86px;
+}
+
+.inicio .x-12{
+    letter-spacing: 0;
+    line-height: 26px;
+    white-space: nowrap;
+}
+
+.inicio .plataforma-2{
+    letter-spacing: 0;
+    line-height: 25px;
+    margin-top: 89px;
+    min-height: 29px;
+    white-space: nowrap;
+}
+
+.plataforma {
+    margin-left: 4px;
+}
+
+.fecha-de-la-noticia{
+    letter-spacing: 0;
+    line-height: 25px;
+    margin-left: 4px;
+    margin-top: 17px;
+    min-height: 29px;
+    white-space: nowrap;
+}
+
+.parrafo{
+    color: #fff;
+    margin: -110px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.parrafo-2{
+    color: #fff;
+    margin: 20px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.parraf-3{
+    color: white;
+    margin: 25px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.autor{
+    color: #198754;
+    margin: -390px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.autor-2{
+    color: #198754;
+    margin: -410px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.autor-3{
+    color: #198754;
+    margin: -400px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.fecha-de-la-noticia-1{
+    color: #fff;
+    margin: -580px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.fecha-de-la-noticia-2{
+    color: #fff;
+    margin: -580px 450px;
+    height: 600px;
+    width: 330px;
+}
+.fecha-de-la-noticia-3{
+    color: #fff;
+    margin: -380px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.autor4{
+    color: #198754;
+    margin: 460px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.autor-5{
+    color: #198754;
+    margin: -860px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.autor-6{
+    color:  #198754;
+    margin: -240px 1350px;
+    height: 600px;
+    width: 330px;
+}
+
+.fecha-de-la-noticia-4{
+    color: #fff;
+    margin: -1040px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.fecha-de-la-noticia-5{
+    color: #fff;
+    margin: 280px 450px;
+    height: 600px;
+    width: 330px;
+}
+.fecha-de-la-noticia-6{
+    color: #fff;
+    margin: -340px 1350px;
+    height: 600px;
+    width: 330px;
+}
+
+.parrafo-4{
+    color: #fff;
+    margin: -820px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.parrafo-5{
+    color: #fff;
+    margin: 470px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.parraf-6{
+    color: white;
+    margin: -830px 450px;
+    height: 600px;
+    width: 330px;
+}
+
+.espacio-entre noticias{
+    margin: 20px ;
+}
