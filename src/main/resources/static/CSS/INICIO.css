@@ -21,7 +21,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     font-style: normal;
     font-weight: 400;
     src:url("https://fonts.animapp.com/SegoeUI-Regular");
-    format: "truetype";
+    format("truetype");
 }
 
 @font-face{
@@ -105,12 +105,25 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     width: 126px;
 }
 
-.icon{
-    align-self: center;
-    height: 26px;
-    margin-bottom: 12px;
-    margin-left: 117px;
-    width: 26;
+.icon-switch{
+    height: 20px;
+    width: 28;
+    
+}
+
+.icon-PS{
+    height: 20px;
+    width: 28;
+}
+
+.icon-xbox{
+    height: 20px;
+    width: 28;
+}
+
+.icon-PC{
+    height: 20px;
+    width: 28;
 }
 
 .grupo-1-3{
@@ -298,14 +311,14 @@ h1{
 
 .parrafo{
     color: #fff;
-    margin: -110px 450px;
+    margin: -100px 450px;
     height: 600px;
     width: 330px;
 }
 
 .parrafo-2{
     color: #fff;
-    margin: 20px 450px;
+    margin: 30px 450px;
     height: 600px;
     width: 330px;
 }
@@ -333,7 +346,7 @@ h1{
 
 .autor-3{
     color: #198754;
-    margin: -400px 450px;
+    margin: -425px 450px;
     height: 600px;
     width: 330px;
 }
@@ -353,14 +366,14 @@ h1{
 }
 .fecha-de-la-noticia-3{
     color: #fff;
-    margin: -380px 450px;
+    margin: -400px 450px;
     height: 600px;
     width: 330px;
 }
 
 .autor4{
     color: #198754;
-    margin: 460px 450px;
+    margin: 440px 450px;
     height: 600px;
     width: 330px;
 }
@@ -381,7 +394,7 @@ h1{
 
 .fecha-de-la-noticia-4{
     color: #fff;
-    margin: -1040px 450px;
+    margin: -1020px 450px;
     height: 600px;
     width: 330px;
 }

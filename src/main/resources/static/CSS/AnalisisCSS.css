@@ -1,0 +1,72 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 5 abr 2023, 14:43:04
+    Author     : Marcelo
+*/
+
+.imagen-inicio{
+    margin: 100px 30px;
+    height: 500px;
+    width: 738px;
+}
+
+.Analisis{
+    color: #198754;
+}
+
+.informacion-imagen-1{
+    color: #fff;
+    margin: 1px 30px;
+
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.recomendacion{
+    color: #198754;
+}
+
+.imagenes-recomendaciones{
+    margin: 150px 200px;
+    height: 200px;
+    width: 200px;
+}
+
+.imagenes-recomendaciones-elden{
+    margin: 150px 120px;
+    height: 200px;
+    width: 350px;
+}
+
+.imagenes-recomendaciones-re4{
+    margin: 150px 200px;
+    height: 200px;
+    width: 180px;
+}
+
+.textos{
+
+    color:#fff
+}
+
+
+.imagenes-POPULARES{
+    height: 200px;
+    width: 200px;
+    margin: 30px -10px;
+}
+
+.imagenes-POPULARES-gta{
+    height: 190px;
+    width: 170px;
+    margin: 50px 1px
+}
