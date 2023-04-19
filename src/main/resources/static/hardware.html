@@ -300,12 +300,6 @@
                                 </li>
                             </div>
                         </div>
-                        <div>
-                            <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
-                               th:href="${urlBuilder.replaceQueryParam('lang','es').toUriString()}">ES</a>
-                            <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
-                               th:href="${urlBuilder.replaceQueryParam('lang','en').toUriString()}">EN</a>
-                        </div>
 
                     </div>
                 </div>
@@ -316,6 +310,19 @@
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <p>Copyright Company Name © 2023. All rights reserved.</p>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <a href="@{/{lang=es}}">ES</a>
+                            <a href="@{/{lang=en}}">EN</a>
+
+                            <p>segunda forma</p>
+
+                            <a href="?lang=en">EN</a>
+                            <a href="?lang=es">ES</a>
+
+
+
+                            </p>
                         </div>
                     </div>
                 </div>

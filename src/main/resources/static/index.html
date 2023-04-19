@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,11 @@
         <header>
             <img src="images/header.jpg" class="img-fluid" alt="header"/>
         </header>
+
+
+        <h1 th:text="${titulo}"></h1>
+        <h1 th:text="#{cliente.titulo}"></h1>
+
 
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg bg-black">        
@@ -36,7 +41,7 @@
                             <a class="nav-link text-white" href="Guias.html">Guias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white"  href="Analisis.html">Analisis</a>
+                            <a class="nav-link text-white" href="Analisis.html">Analisis</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="Plataformas.html">Plataformas</a>
@@ -45,7 +50,10 @@
                             <a class="nav-link text-white" href="hardware.html">Hardware</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="Productos.html">Productos</a>
+                            <a class="nav-link text-white" href="Tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/producto">Base De Datos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="InicioSesion.html">Usuario</a>
@@ -82,25 +90,26 @@
             <div class="parte-noticias" >
                 <div class="NOTICIAS" style="position: absolute; top: 940px; left: 25px"  ><h1>NOTICIAS</h1> </div>
                 <p class="subtitulo" style="position: absolute; top: 960px; left: 210px"  > Novedades de hoy</p>
-                <h1 style="position: absolute; top: 932px; left: 345px" >_______________________________________________________________________________________</h1>
-                <div class"flex-row-2" style="position: absolute; top: 1000px; >
-                     <div class="grupo-container">
-                    <div class="grupo7">
-                        <div class="overlap-group1" >
-                            <img class="Linea-5" src="images/miyamoto.jpg" alt="linea5"/>
+                <h1 style="position: absolute; top: 932px; left: 345px" >_______________________________________________________________________________________</h1><div class="flex-row-2" style="position: absolute; top: 1000px;">
+                    <div class="grupo-container">
+                        <div class="grupo7">
+                            <div class="overlap-group1">
+                                <img class="Linea-5" src="images/miyamoto.jpg" alt="linea5"/>
+                            </div>
                         </div>
-                    </div>
-                    <div class="grupo-3">
-                        <div class="overlap-group1">
-                            <img class="Linea-5" src="images/re4N.jpg" alt="Linea5" />
+                        <div class="grupo-3">
+                            <div class="overlap-group1">
+                                <img class="Linea-5" src="images/re4N.jpg" alt="Linea5" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="grupo-3">
-                        <div class="overlap-group1">
-                            <img class="Linea-5" src="images/SWJD.png" alt="Linea5"/>
+                        <div class="grupo-3">
+                            <div class="overlap-group1">
+                                <img class="Linea-5" src="images/SWJD.png" alt="Linea5"/>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="flex-col-1 flex-col-5">
                     <div <p class="parrafo"  >¿Cuándo habrá nuevo juego de Mario? Shigeru Miyamoto sonríe cuando le hacen esa pregunta y emplaza a que veamos los próximos eventos de la compañía.</p></div>
                 </div>
@@ -161,7 +170,7 @@
 
 <div class="p-5 bg-black text-success">
     <div class="parte-derecha" style="position: absolute; top: 183px; left: 760px;">
-        <div class="proximos-lanzamientos" style="position: absolute; top: -10px; left: 350px;"><h3>PROXIMOS LANZAMIENTOS</h3></div>
+        <div class="proximos-lanzamientos" style="position: absolute; top: -10px; left: 350px;"><h3 th:text="#index.titulo">PROXIMOS LANZAMIENTOS</h3></div>
         <div class="grupo-de-desplazamiento-2 grupo-de-desplazamiento">
             <div class="grupo-2">
                 <!-- inicio nintendo -->
@@ -252,9 +261,13 @@
                 </div> 
             </div>
             <div class="flex-col flex">
-                <div class="titulo-de-juego footlightml-light-reef-28px">Mega Man Battle Network Legacy Collection Vol. 1</div>
-                <div class="breve-resumen footlightml-light-white-15px">¡Volvió la serie Mega Man Battle Network! El Vol. 1 contiene Mega Man Battle Network 1-3</div>
+                <div class="titulo-de-juego footlightml-light-reef-28px" th:text="#{game.title}">Mega Man Battle Network Legacy Collection Vol. 1</div>
+                <div class="breve-resumen footlightml-light-white-15px" th:text="#{game.summary}">El vol. 1 incluye Mega Man Battle Network 1-3</div>
             </div>
+
+
+
+
             <img 
                 <img class="icon-PS" style="position: absolute; top: 32px; left: 925px;"
                 src="images/PS-LOGO.png" 
@@ -304,7 +317,11 @@
     </div>
 
 </div>
-
+<!--
+<div class="total-del-footer">
+    <iframe src="footer.html" style="overflow:hidden; height:305px;"hidden;"scrolling="no"></iframe>
+</div>
+-->
 <div class="total-del-footer">
     <footer id="footer" class="footer-1  bg-success text-black">
         <div class="main-footer widgets-dark typo-light">
@@ -357,8 +374,8 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="widget no-box">
-                            <h5 class="widget-title">Unete<span></span></h5>
-                            <p class="text-white">Registrate en GamesCR, para que no te pierdas de los ultimos lanzamientos, y para que puedas comprar
+                            <h5 class="widget-title" th:text="#cliente.titulo">Unete<span></span></h5>
+                            <p class="text-white" th:text="#cliente.titulo">Registrate en GamesCR, para que no te pierdas de los ultimos lanzamientos, y para que puedas comprar
                                 en el sitio web.</p>
                             <a class="btn bg-black text-white" href="registro.html" target="_blank">Registrate</a>
                         </div>
@@ -368,7 +385,7 @@
 
                         <div class="widget no-box">
                             <h5 class="widget-title">Contact Us<span></span></h5>
-                            <a class="link text-white" aria-current="page" href="#">Grupo6@noexiste.com</a>
+                            <a class="link text-white" aria-current="page" href="#" >Grupo6@noexiste.com</a>
                             </li>
                         </div>
                     </div>
@@ -381,13 +398,28 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <p>Copyright Company Name © 2023. All rights reserved.</p>
+                        <p>Copyright Company Name © 2023. All rights reserved.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 </div> 
+<div class="col-md-12 text-center">
+    <a href="@{/{lang=es}}">ES</a>
+    <a href="@{/{lang=en}}">EN</a>
+
+    <p>segunda forma</p>
+
+    <a href="?lang=en">EN</a>
+    <a href="?lang=es">ES</a>
+
+
+
+</p>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
