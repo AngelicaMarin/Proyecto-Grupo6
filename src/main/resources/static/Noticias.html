@@ -13,14 +13,10 @@ and open the template in the editor.
         <link rel="stylesheet" href="style.css" type="text/css"/>
         <link rel="stylesheet" href="Noticias.css" type="text/css"/>
     </head>
+    <header th:fragment="header">
+        <img src="images/header.png" class="img-fluid" alt="header" style="height: 140px; width: 100%;"/>
+    </header>
     <body>
-        <header th:fragment="header">
-            <div class="text-white" style="position: absolute; left: 42%; top: 5%;">
-                <h1>GAMES CR</h1>
-            </div>
-            <img src="images/header.jpg" class="img-fluid" alt="header"/>
-
-        </header>
 
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg bg-black">        

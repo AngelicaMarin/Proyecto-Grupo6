@@ -10,9 +10,9 @@
     </head>
     <body>
         <!-- HEADER -->
-        <header>
-            <img src="images/header.jpg" class="img-fluid" alt="header"/>
-        </header>
+    <header th:fragment="header">
+        <img src="images/header.png" class="img-fluid" alt="header" style="height: 140px; width: 100%;"/>
+    </header>
 
 
         <h1 th:text="${titulo}"></h1>

@@ -66,6 +66,15 @@ public class Producto implements Serializable{
         this.garantia = garantia;
     }
 
+    public String getCant_disp() {
+        return cant_disp;
+    }
+
+    public void setCant_disp(String cant_disp) {
+        this.cant_disp = cant_disp;
+    }
+    
+
     public Categoria getCategoria() {
         return categoria;
     }
@@ -73,13 +82,5 @@ public class Producto implements Serializable{
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
     }
-
-    public String getCant_disp() {
-        return cant_disp;
-    }
-
-    public void setCant_disp(String cant_disp) {
-        this.cant_disp = cant_disp;
-    }   
     
 }

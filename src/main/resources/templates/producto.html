@@ -9,78 +9,76 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>    
 
     </head>
-    <body>
-        <!-- HEADER -->
-        <header>
-            <div class="text-white" style="position: absolute; left: 42%; ">
-                <h1>GAMES CR</h1>
+    <!-- HEADER -->
+    <header>
+        <div class="text-white" style="position: absolute; left: 42%; ">
+        </div>
+        <img src="images/header.png" class="img-fluid" alt="header" style="height: 140px; width: 100%;"/>
+
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg " style="background: black;">        
+        <div class="container-fluid">  
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item" >
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Lanzamientos.html">Lanzamientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-white" href="Noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Guias.html">Guias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Analisis.html">Analisis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Plataformas.html">Plataformas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="hardware.html">Hardware</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="/producto">Base De Datos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="InicioSesion.html">Usuario</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="images/usuario.png" alt="usuario"/>
+                    </li>
+                </ul>
             </div>
-            <img src="images/header.jpg" class="img-fluid" alt="header"/>
+        </div>
+    </nav>
+    <body style="background: #10763A;">
 
-        </header>
-
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg">        
-            <div class="container-fluid">  
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item" >
-                            <a class="nav-link text-black" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="Lanzamientos.html">Lanzamientos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  text-black" href="Noticias.html">Noticias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="Guias.html">Guias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="Analisis.html">Analisis</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="Plataformas.html">Plataformas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="hardware.html">Hardware</a>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="Tienda.html">Tienda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-success" href="/producto">Base De Datos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="InicioSesion.html">Usuario</a>
-                        </li>
-                        <li class="nav-item">
-                            <img src="images/usuario.png" alt="usuario"/>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="container">
+        <div class="container" style="background: white; margin-top: 5%; border-radius: 40px; padding: 10px;">
             <div class="custyle">
                 <table class="table table-striped custab">
-                    <h1 class= "text-black text-center" th:text="${titulo}"></h1>
+                    <h1 class= "text-black text-center" style="color: #10763A;">Productos</h1>
                     <thead>
-                    <a href="@{/editProducto/{id}(id=${user.getId})}" class="btn btn-primary btn-xs pull-right" style=""><b>+</b> Agregar nuevo producto</a>
-                    <tr>
-                    <tr>
-                        <th scope="col">Producto</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Descripcion</th>
-                        <th scope="col">Garantia</th>
-                        <th scope="col">Disponible</th>
-                        <th scope="col">Categoria</th>
-                        <th scope="col">Editar</th>
-                        <th scope="col">Eliminar</th>
+                    <a href="/productoN" class="btn  btn-xs pull-right" style="background: #10763A; color: white; border-radius: 15px;"><b>+</b> Agregar nuevo producto</a>
+                    <tr style="color: #10763A;">
+                        <th class="text-center" scope="col">Precio₡</th>
+                        <th class="text-center" scope="col">Producto</th>
+                        <th class="text-center" scope="col">Descripcion</th>
+                        <th class="text-center" scope="col">Garantia</th>
+                        <th class="text-center" scope="col">Disponible</th>
+                        <th class="text-center" scope="col">Categoria</th>
+                        <th class="text-center" scope="col">Editar</th>
+                        <th class="text-center" scope="col">Eliminar</th>
                     </tr>
                     </thead>
                     <th:block th:each="user : ${productos}">
@@ -92,10 +90,10 @@
                             <td class="text-center" scope="row" th:text="${user.getCant_disp}"></td>
                             <td class="text-center" scope="row" th:text="${user.getCategoria.getCategoria}"></td> </td>
                             <td>                        
-                                <a th:href="@{/editProducto/{id}(id=${user.getId})}">Edit</a>                   
+                                <a class="btn  btn-xs pull-right" style="background: #198754; color: white" th:href="@{/editProducto/{id}(id=${user.getId})}">Edit</a>                   
                             </td>
                             <td>                        
-                                <a th:href="@{/delete/{id}(id=${user.getId})}">Delete</a>                    
+                                <a class="btn  btn-xs pull-right" style="background: #f75959; color: white" th:href="@{/delete/{id}(id=${user.getId})}">Delete</a>                    
                             </td>
                         </tr>
                     </th:block>

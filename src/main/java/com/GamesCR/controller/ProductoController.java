@@ -59,4 +59,13 @@ public class ProductoController {
         model.addAttribute("categorias", listaCategorias);
         return "crear";
     }
+
+    @GetMapping("/addProducto/{id}")
+    public String agregarProducto(@PathVariable("id") Long idProducto, Model model) {
+        Producto producto = productoService.getProductoById(idProducto);
+        List<Categoria> listaCategorias = categoriaService.listCategory();
+        model.addAttribute("producto", producto);
+        model.addAttribute("categorias", listaCategorias);
+        return "agregar";
+    }
 }
