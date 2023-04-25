@@ -15,6 +15,16 @@ const productos = [
         precio: 1000
     },
     {
+        id: "Zelda-NS",
+        titulo: "Zelda",
+        imagen: "./images/CV/NSZelda.jpg",
+        categoria: {
+            nombre: "Videojuegos",
+            id: "videojuegos"
+        },
+        precio: 1000
+    },
+    {
         id: "MARIORABBIDS-NS",
         titulo: "MARIO & RABBIDS",
         imagen: "./images/CV/NSMarioRabbids.jpg",
@@ -36,7 +46,7 @@ const productos = [
     },
     {
         id: "SonicMania-NS",
-        titulo: "Aonic Mania",
+        titulo: "Sonic Mania",
         imagen: "./images/CV/NSSonicMania.jpg",
         categoria: {
             nombre: "Videojuegos",

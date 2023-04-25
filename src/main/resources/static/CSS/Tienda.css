@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Tilt+Prism&display=swap');
+
 
 :root{
     --clr-main: #10763A;
@@ -14,7 +13,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-font-family: 'Mouse Memoirs', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
@@ -154,8 +152,9 @@ main{
 }
 
 .producto-imagen{
-    max-width: 100%;
+    width: 100%;
     border-radius: 1rem;
+    height: 65%;
 }
 
 .producto-detalles{
