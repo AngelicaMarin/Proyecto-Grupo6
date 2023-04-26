@@ -55,9 +55,7 @@ and open the template in the editor.
                         <li class="nav-item">
                             <a class="nav-link text-white" href="/producto">Base De Datos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="InicioSesion.html">Usuario</a>
-                        </li>
+
                         <li class="nav-item">
                             <img src="images/usuario.png" alt="usuario"/>
                         </li>
@@ -120,7 +118,7 @@ and open the template in the editor.
                 </div>
             </div> 
             <div class="p-5 bg-black text-success">
-                <div class="perifericos" style="position: absolute; top: 211px; left: 880px;">
+                <div class="perifericos" style="position: absolute; top: 242px; left: 880px;">
                     <h1>_____________________________</h1>
                     <h1 class="tituloLanzamientos">TOP YA A LA VENTA</h1>
                     <div class="p-5">
@@ -168,10 +166,11 @@ and open the template in the editor.
             </div>
         </div>
 
-        <footer th:fragment="footer" id="footer" class="footer-1  bg-success text-black">
+        <footer id="footer" class="footer-1  bg-success text-black">
             <div class="main-footer widgets-dark typo-light">
                 <div class="container">
                     <div class="row">
+
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="widget subscribe no-box">
                                 <h5 class="widget-title">GAMESCR<span></span></h5>
@@ -206,21 +205,19 @@ and open the template in the editor.
                                     <li class="item" >
                                         <a class="link text-white" aria-current="page" href="hardware.html">Hardware</a>
                                     </li>
-                                    <li class="item" >
-                                        <a class="link text-white" aria-current="page" href="Tienda.html">Productos</a>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="/producto">Base De Datos</a>
                                     </li>
 
-                                    <li class="item" >
-                                        <p><a class="link text-white" aria-current="page" href="InicioSesion.html">Usuario</a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="widget no-box">
-                                <h5 class="widget-title">Unete<span></span></h5>
-                                <p class="text-white">Registrate en GamesCR, para que no te pierdas de los ultimos lanzamientos, y para que puedas comprar
+                                <h5 class="widget-title" th:text="#cliente.titulo">Unete<span></span></h5>
+                                <p class="text-white" th:text="#cliente.titulo">Registrate en GamesCR, para que no te pierdas de los ultimos lanzamientos, y para que puedas comprar
                                     en el sitio web.</p>
                                 <a class="btn bg-black text-white" href="registro.html" target="_blank">Registrate</a>
                             </div>
@@ -230,10 +227,11 @@ and open the template in the editor.
 
                             <div class="widget no-box">
                                 <h5 class="widget-title">Contact Us<span></span></h5>
-                                <a class="link text-white" aria-current="page" href="#">Grupo6@noexiste.com</a>
+                                <a class="link text-white" aria-current="page" href="#" >Grupo6@noexiste.com</a>
                                 </li>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -242,23 +240,25 @@ and open the template in the editor.
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <p>Copyright Company Name © 2023. All rights reserved.</p>
+                            <p>Copyright Company Name © 2023. All rights reserved.
+                            </p>
+
+                            <div class="col-md-12 text-center">
+                                <a href="@{/{lang=es}}">ES</a>
+                                <a href="@{/{lang=en}}">EN</a>
+                                <!--  
+                                <p>segunda forma</p>
+                            
+                                <a href="?lang=en">EN</a>
+                                <a href="?lang=es">ES</a>
+                            
+                                -->
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-12 text-center">
-                <a href="@{/{lang=es}}">ES</a>
-                <a href="@{/{lang=en}}">EN</a>
-
-                <p>segunda forma</p>
-
-                <a href="?lang=en">EN</a>
-                <a href="?lang=es">ES</a>
-
-
-
-                </p>
             </div>
         </footer>
     </div>

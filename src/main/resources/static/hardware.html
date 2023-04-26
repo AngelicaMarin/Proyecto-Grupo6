@@ -8,9 +8,9 @@
     </head>
     <body>
         <!-- HEADER -->
-    <header th:fragment="header">
-        <img src="images/header.png" class="img-fluid" alt="header" style="height: 140px; width: 100%;"/>
-    </header>
+        <header th:fragment="header">
+            <img src="images/header.png" class="img-fluid" alt="header" style="height: 140px; width: 100%;"/>
+        </header>
 
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg bg-black">        
@@ -48,9 +48,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" href="/producto">Base De Datos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="InicioSesion.html">Usuario</a>
-                        </li>
+
                         <li class="nav-item">
                             <img src="images/usuario.png" alt="usuario"/>
                         </li>
@@ -272,8 +270,8 @@
                                         <a class="link text-white" aria-current="page" href="Tienda.html">Productos</a>
                                     </li>
 
-                                    <li class="item" >
-                                        <p><a class="link text-white" aria-current="page" href="InicioSesion.html">Usuario</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="/producto">Base De Datos</a>
                                     </li>
                                 </ul>
                             </div>
@@ -310,15 +308,14 @@
                         <div class="col-md-12 text-center">
                             <a href="@{/{lang=es}}">ES</a>
                             <a href="@{/{lang=en}}">EN</a>
-
+                            <!--  
                             <p>segunda forma</p>
-
+                        
                             <a href="?lang=en">EN</a>
                             <a href="?lang=es">ES</a>
+                        
+                            -->
 
-
-
-                            </p>
                         </div>
                     </div>
                 </div>
