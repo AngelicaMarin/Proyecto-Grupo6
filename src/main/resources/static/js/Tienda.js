@@ -12,8 +12,20 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 40000
     },
+    
+    {
+        id: "ACNHSplatoon-NS",
+        titulo: "Animal Crossing",
+        imagen: "./images/CV/NSAnimalCrossing.jpg",
+        categoria: {
+            nombre: "Videojuegos",
+            id: "videojuegos"
+        },
+        precio: 41000
+    },
+    
     {
         id: "Zelda-NS",
         titulo: "Zelda",
@@ -22,7 +34,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 35000
     },
     {
         id: "MARIORABBIDS-NS",
@@ -32,7 +44,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 32000
     },
     {
         id: "MarioOdyssey-NS",
@@ -42,7 +54,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 45000
     },
     {
         id: "SonicMania-NS",
@@ -52,7 +64,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 30000
     },
 
     //PC
@@ -65,7 +77,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 18000
     },
     {
         id: "HogwartsLegacy-PC",
@@ -75,7 +87,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 30000
     },
     {
         id: "Horizon-PC",
@@ -85,7 +97,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 15000
     },
     {
         id: "ResidentEvil2-PC",
@@ -95,7 +107,17 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 35000
+    },
+    {
+        id: "WatchDogs-PC",
+        titulo: "Watch Dogs 2",
+        imagen: "./images/CV/PCWatcDogs2.jpg",
+        categoria: {
+            nombre: "Videojuegos",
+            id: "videojuegos"
+        },
+        precio: 13000
     },
 
     //PS4
@@ -107,7 +129,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 22000
     },
     {
         id: "BATTLEFIELD-PS4",
@@ -117,7 +139,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 15000
     },
     {
         id: "FARCRY6-PS4",
@@ -127,7 +149,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 20000
     },
     {
         id: "Horizon-PS4",
@@ -137,7 +159,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 15000
     },
     {
         id: "MORTALKOMBAT-PS4",
@@ -147,7 +169,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 8000
     },
     {
         id: "Uncharted4-PS4",
@@ -157,7 +179,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 10000
     },
 
     //XBOX
@@ -170,7 +192,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 13000
     },
     {
         id: "FIFA22-XBOX",
@@ -180,7 +202,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 22000
     },
     {
         id: "BATMAN-XBOX",
@@ -190,7 +212,7 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 9000
     },
     {
         id: "Left4Dead-XBOX",
@@ -200,7 +222,27 @@ const productos = [
             nombre: "Videojuegos",
             id: "videojuegos"
         },
-        precio: 1000
+        precio: 8500
+    },
+    {
+        id: "TombRaider-XBOX",
+        titulo: "Tomb Raider",
+        imagen: "./images/CV/XBOXTombRaider.jpg",
+        categoria: {
+            nombre: "Videojuegos",
+            id: "videojuegos"
+        },
+        precio: 7950
+    },
+    {
+        id: "FlightSimulator-XBOX",
+        titulo: "Flight Simulator",
+        imagen: "./images/CV/XBOXFlightSimulator.jpg",
+        categoria: {
+            nombre: "Videojuegos",
+            id: "videojuegos"
+        },
+        precio: 25000
     },
 
     //COMPONENTES
@@ -213,7 +255,7 @@ const productos = [
             nombre: "Componentes",
             id: "componentes"
         },
-        precio: 1000
+        precio: 429000
     },
     {
         id: "PROCESADOR1-Componente",
@@ -223,7 +265,7 @@ const productos = [
             nombre: "Componentes",
             id: "componentes"
         },
-        precio: 1000
+        precio: 409000
     },
     {
         id: "FUENTEPODER-Componente",
@@ -233,7 +275,7 @@ const productos = [
             nombre: "Componentes",
             id: "componentes"
         },
-        precio: 1000
+        precio: 348000
     },
     {
         id: "Geforce4090-Componente",
@@ -243,7 +285,7 @@ const productos = [
             nombre: "Componentes",
             id: "componentes"
         },
-        precio: 1000
+        precio: 1149000
     },
     {
         id: "TARJETAMADRE2-Componente",
@@ -253,7 +295,7 @@ const productos = [
             nombre: "Componentes",
             id: "componentes"
         },
-        precio: 1000
+        precio: 215000
     },
     {
         id: "PROCESADOR2-Componente",
@@ -263,7 +305,7 @@ const productos = [
             nombre: "Componentes",
             id: "componentes"
         },
-        precio: 1000
+        precio: 395000
     },
     {
         id: "RAM-Componente",
@@ -273,7 +315,7 @@ const productos = [
             nombre: "Componentes",
             id: "componentes"
         },
-        precio: 1000
+        precio: 67000
     },
 
     //PERIFERICOS
@@ -286,7 +328,7 @@ const productos = [
             nombre: "Perifericos",
             id: "perifericos"
         },
-        precio: 1000
+        precio: 39900
     },
     {
         id: "VOLANTE-Periferico",
@@ -296,7 +338,7 @@ const productos = [
             nombre: "Perifericos",
             id: "perifericos"
         },
-        precio: 1000
+        precio: 179000
     },
     {
         id: "MOUSE-Periferico",
@@ -306,7 +348,7 @@ const productos = [
             nombre: "Perifericos",
             id: "perifericos"
         },
-        precio: 1000
+        precio: 80500
     },
     {
         id: "MICROFONO-Periferico",
@@ -316,7 +358,7 @@ const productos = [
             nombre: "Perifericos",
             id: "perifericos"
         },
-        precio: 1000
+        precio: 119000
     },
     {
         id: "HEADSET-Periferico",
@@ -326,7 +368,7 @@ const productos = [
             nombre: "Perifericos",
             id: "perifericos"
         },
-        precio: 1000
+        precio: 75000
     },
     {
         id: "TECLADO-Periferico",
@@ -336,7 +378,7 @@ const productos = [
             nombre: "Perifericos",
             id: "perifericos"
         },
-        precio: 1000
+        precio: 119000
     },
     {
         id: "STREAMPLIFY-Periferico",
@@ -346,7 +388,7 @@ const productos = [
             nombre: "Perifericos",
             id: "perifericos"
         },
-        precio: 1000
+        precio: 29000
     },
 
     //CONSOLAS
@@ -359,7 +401,7 @@ const productos = [
             nombre: "Consolas",
             id: "consolas"
         },
-        precio: 1000
+        precio: 147900
     },
     {
         id: "NSOLED-CONSOLAS",
@@ -369,7 +411,7 @@ const productos = [
             nombre: "Consolas",
             id: "consolas"
         },
-        precio: 1000
+        precio: 257500
     },
     {
         id: "PS4-CONSOLAS",
@@ -379,7 +421,7 @@ const productos = [
             nombre: "Consolas",
             id: "consolas"
         },
-        precio: 1000
+        precio: 255000
     },
     {
         id: "PS5-CONSOLAS",
@@ -389,7 +431,7 @@ const productos = [
             nombre: "Consolas",
             id: "consolas"
         },
-        precio: 1000
+        precio: 493000
     },
     {
         id: "XboxXSeries-CONSOLAS",
@@ -399,7 +441,7 @@ const productos = [
             nombre: "Consolas",
             id: "consolas"
         },
-        precio: 1000
+        precio: 359000
     },
     {
         id: "Xbox360-CONSOLAS",
@@ -409,7 +451,7 @@ const productos = [
             nombre: "Consolas",
             id: "consolas"
         },
-        precio: 1000
+        precio: 45000
     }
 ];
 
